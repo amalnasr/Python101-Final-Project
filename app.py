@@ -6,7 +6,7 @@ def search(number):
 
     if number in all_numbers.keys():
         print('This number for: '+all_numbers[number])
-    elif (number.isdecimal() == False) or (len(number) < 10):
+    elif (number.isdecimal() == False) or (len(number) != 10):
         print('This is invalid number')
     else:
         print('Sorry, the number is not found')
