@@ -4,7 +4,7 @@ def search(number):
                    '4444444444': 'Abdullah', '5555555555': 'Rawan', '6666666666': 'Faisal',
                    '7777777777': 'Layla'}
 
-    if number in all_numbers:
+    if number in all_numbers.keys():
         print('This number for: '+all_numbers[number])
     elif (number.isdecimal() == False) or (len(number) < 10):
         print('This is invalid number')
